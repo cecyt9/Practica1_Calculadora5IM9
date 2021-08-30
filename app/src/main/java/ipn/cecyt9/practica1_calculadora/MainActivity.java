@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    Double numero1,numero2,resultado;
+    Double numero1,numero2,resultado,resultado2;
     String operador;
 
     public void onClickButtonOne(View miView){
@@ -41,7 +41,11 @@ public class MainActivity extends AppCompatActivity {
         operador="+";
         onClickOperacionCapturaNumero1(miView);
     }
-
+    public void onClickSuma2(View miView)
+    {
+        operador="+";
+        onClickOperacionCapturaNumero1(miView);
+    }
     public void onClickIgual(View miView)
     {
         TextView tv = (TextView) findViewById(R.id.textView) ;
